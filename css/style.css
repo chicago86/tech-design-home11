@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+body {
+  font: 24px/1.3 "Open Sans", sans-serif;
+  background: #3e3b4a;
+  margin: 0;
+}
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1260px;
+  margin: 0 auto;
+  background: #3e3b4a;
+  height: 100vmin;
+}
+.ba-menu__burger {
+  display: block;
+  height: 25px;
+  width: 25px;
+  position: relative;
+  margin-right: 10px;
+}
+.ba-col-4--p {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #898691;
+}
+.ba-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 96px;
+}
+.ba-menu-style {
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background-color: #898691;
+  top: 50%;
+  left: 50%;
+  margin-top: -1px;
+  margin-left: -10px;
+}
+.ba-menu-style::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background-color: #898691;
+  top: 50%;
+  transform: translateY(5px);
+}
+.ba-menu-style::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 3px;
+  background-color: #898691;
+  top: 50%;
+  transform: translateY(-7px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+.ba-logo-title {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+  padding-top: 70px;
+}
+form {
+  margin-top: 96px;
+  display: flex;
+  padding-left: 40px;
+  justify-content: flex-end;
+}
+input {
+  width: 60px;
+  border: none;
+  color: #898691;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  background: transparent;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.ba-logo__item {
+  color: #898691;
+  font-size: 13px;
+  font-weight: 400;
+}
+.ba-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ba-section-one {
+  margin-top: 75px;
+  background-image: url(../img/foto-6.png);
+  background-size: cover;
+  /* display: flex;
+  flex-direction: column; */
+}
+.ba-col-8 {
+  background-image: url(../img/Vector.png);
+  background-size: cover;
+  /* margin-right: 20px; */
+}
+.ba-col--two {
+  background-image: url(../img/snape.png);
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.ba-pad {
+  padding-left: 45px;
+}
+.ba-section-one__title {
+  color: #ffc7b0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 76px;
+  letter-spacing: 2.8px;
+  margin-bottom: 25px;
+}
+
+.ba-section-one__text {
+  width: 25%;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 76px;
+  margin-bottom: 25px;
+}
+.ba-section-one__item {
+  width: 25%;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 75px;
+}
+.buttton {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  border: 3px solid #ffe18f;
+  background-color: #3e3b4a;
+  background: transparent;
+  padding: 13px;
+  display: inline-block;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+.ba-three-one__title {
+  margin-top: 75px;
+  color: #ffffff;
+  font-family: "Times New Roman PSMT";
+  font-size: 48px;
+  font-weight: 400;
+  text-align: center;
+}
+.ba-three-one__title--large {
+  font-size: 24px;
+  margin-top: 25px;
+  width: 75%;
+  margin: 0 auto;
+}
+.post {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.buttton__button--light {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  background-color: #66689c;
+  padding: 10px 91px;
+  color: #ffd9d1;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.buttton__button--transparrent {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border: 3px solid #ffd9d1;
+  background-color: transparent;
+  padding: 10px 85px;
+  color: #ffd9d1;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.ba-three-text {
+  color: #ffffff;
+  width: 75%;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+.ba-button {
+  display: inline-block;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  transition: color 0.3s ease-in, border-color 0.3s ease-in,
+    background-color 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.ba-section-one__text--small {
+  font-size: 36px;
+  width: 60%;
+  text-align: center;
+  margin-top: 144px;
+  margin-bottom: 120px;
+}
+.ba-section-one__text--big {
+  font-size: 36px;
+  width: 60%;
+  text-align: center;
+  margin-top: 120px;
+  line-height: 1.4;
+  margin-bottom: 120px;
+}
+
+.ba-col-3---one {
+  background-image: url(../img/Shape4.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 20px solid #3e3b4a;
+}
+.ba-col-3--two {
+  background-image: url(../img/Shape5.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 20px solid #3e3b4a;
+}
+.ba-col-6--one {
+  background-image: url(../img/snape6.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+.ba-section-five {
+  margin-top: 20px;
+}
+.ba-section-one__text--left {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 76px;
+  line-height: 1.4;
+  width: 50%;
+}
+.ba-last {
+  width: 25%;
+  text-align: center;
+}
+.ba-last-par {
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 400;
+  margin: 20px 0 185px;
+  width: 50%;
+  line-height: 1.4;
+}
+.buttton:hover {
+  background: #ffe18e;
+  color: #3d3c4a;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0;
+}
+.favicon-one {
+  padding-right: 20px;
+}
+.ba-name {
+  color: #898691;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
