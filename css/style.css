@@ -7,12 +7,10 @@ body {
 
 /* Layout */
 .ba-container {
-  padding-left: 20px;
-  padding-right: 20px;
   max-width: 1260px;
   margin: 0 auto;
   background: #3e3b4a;
-  height: 100vmin;
+  min-height: 100vh;
 }
 .ba-menu__burger {
   display: block;
@@ -319,4 +317,8 @@ footer {
   font-family: "Open Sans";
   font-size: 14px;
   font-weight: 400;
+  margin-left: -20px;
+}
+.ba-iphone{
+  background: #30373d;
 }
